@@ -1,0 +1,96 @@
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ti-hero {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.ti-hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.ti-hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.ti-cta {
+    margin-top: 20px;
+    display: inline-block;
+    background: white;
+    color: #1e3c72;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.ti-cta:hover {
+    background: #f2f2f2;
+}
+
+/* FEATURES */
+.ti-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 50px 40px;
+}
+
+.ti-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.ti-card:hover {
+    transform: translateY(-5px);
+}
+
+/* COMPARISON SECTION */
+.ti-compare {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.ti-compare h2 {
+    margin-bottom: 30px;
+}
+
+.ti-compare-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.ti-compare-box .col {
+    background: white;
+    padding: 25px;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+}
+
+.ti-compare-box ul {
+    padding-left: 0;
+}
+
+.ti-compare-box li {
+    list-style: none;
+    padding: 6px 0;
+}
+

@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* === NAVBAR (Copied & Fixed to match Home Page) === */
+
+body {
+    padding-top: 70px; /* Push page content below fixed navbar */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #0b1724;
+    padding: 10px 25px;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.logoname {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #83d2ff;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #0b1724;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 8px 0;
+    z-index: 200;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 8px 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.dropdown-content li a:hover {
+    background: #00c4ff;
+    color: black;
+    border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* SEARCH BOX */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    width: 260px;
+    flex-shrink: 0;
+    
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* ACCOUNT BUTTON + DROPDOWN */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.account-dropdown {
+    position: relative;
+}
+
+.account-btn {
+    padding: 10px 22px;
+    background-color: #1e3c72;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+
+.account-btn:hover {
+    background-color: #162b52;
+}
+
+.account-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.account-menu a {
+    padding: 14px 18px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.account-menu a:hover {
+    background: #f0f4ff;
+    color: #1e3c72;
+}
+
+.account-dropdown:hover .account-menu {
+    display: block;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    padding: 8px 22px;
+    background: #00c4ff;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background: #83d2ff;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 65vh;
+    background: url("hero-invest.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 30px;
+    color: #ffffff;
+    position: relative;
+}
+
+
+.hero-content {
+    position: relative;
+    max-width: 650px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #4CC9F0;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #E6F1F5;
+    margin-bottom: 22px;
+}
+
+.cta-btn {
+    background: #4CC9F0;
+    color: #121417;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.cta-btn:hover {
+    background: #3AB7DB;
+}
+
+
+.steps {
+    padding: 60px 40px;
+    background: #0b2340;
+    color: #e0e7ff;
+}
+
+.steps h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.step-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+}
+
+.step-card h3 {
+    color: #00c4ff;
+    margin: 15px 0;
+}
+
+.step-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.recommendations {
+    padding: 60px 40px;
+    background: #0a1e3a;
+    color: #e0e7ff;
+}
+
+.recommendations h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.recommendation-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+}
+
+
+.footer {
+    background: #050a14;
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px 20px;
+}
