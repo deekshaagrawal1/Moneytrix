@@ -40,7 +40,7 @@ body {
     color: white;
 }
 
-/* NAV LINKS */
+
 .nav-links {
     display: flex;
     gap: 30px;
@@ -63,7 +63,6 @@ body {
     color: #83d2ff;
 }
 
-/* DROPDOWN */
 .dropdown {
     position: relative;
 }
@@ -96,7 +95,6 @@ body {
     display: block;
 }
 
-/* SEARCH BOX */
 .search-box {
     position: relative;
     display: flex;
@@ -116,7 +114,6 @@ body {
     font-size: 14px;
 }
 
-/* ACCOUNT BUTTON + DROPDOWN */
 .nav-buttons {
     display: flex;
     align-items: center;
@@ -173,7 +170,6 @@ body {
     display: block;
 }
 
-/* LOGIN BUTTON */
 .login-btn {
     padding: 8px 22px;
     background: #00c4ff;
@@ -309,10 +305,6 @@ body {
     text-align: center;
     padding: 30px 20px;
 }
-
-/* ===========================
-   BASIC RESPONSIVENESS
-   =========================== */
 
 /* Tablets and smaller (<= 1024px) */
 @media (max-width: 1024px) {

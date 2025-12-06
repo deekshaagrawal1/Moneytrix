@@ -94,10 +94,6 @@
     padding: 6px 0;
 }
 
-/* ===========================
-   BASIC RESPONSIVENESS
-   =========================== */
-
 /* Tablets and smaller (<= 1024px) */
 @media (max-width: 1024px) {
     .intro {

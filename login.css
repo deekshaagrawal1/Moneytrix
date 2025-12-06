@@ -7,7 +7,6 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1f2937, #111827);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -98,10 +97,6 @@ body {
 .signup-text a:hover {
     text-decoration: underline;
 }
-
-/* ===========================
-   BASIC RESPONSIVENESS
-   =========================== */
 
 /* Tablets and smaller (<= 1024px) */
 @media (max-width: 1024px) {

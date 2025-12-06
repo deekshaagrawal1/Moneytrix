@@ -75,10 +75,6 @@ h2 {
     font-weight: bold;
 }
 
-/* ===========================
-   BASIC RESPONSIVENESS
-   =========================== */
-
 /* Tablets and smaller (<= 1024px) */
 @media (max-width: 1024px) {
     .intro {

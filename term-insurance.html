@@ -10,7 +10,6 @@
 
 <body>
 
-    <!-- NAVBAR (same as your main website) -->
     <nav class="navbar">
          <div class="logo-container">
     <a href="index.html" class="logo-link">
@@ -62,16 +61,16 @@
         </div>
     </nav>
 
-
-    <!-- HERO SECTION -->
     <header class="ti-hero">
-        <h1>Secure Your Family’s Future with Term Life Insurance</h1>
-        <p>Affordable premiums. High coverage. Guaranteed financial protection.</p>
-        <a href="#" class="ti-cta">Calculate Premium</a>
-    </header>
+    <h1>Secure Your Family’s Future with Term Life Insurance</h1>
+    <p>Affordable premiums. High coverage. Guaranteed financial protection.</p>
+
+    <a href="#" class="ti-cta" onclick="startInsurance()">Calculate Premium</a>
+
+    <p id="insurance-msg" style="display:none;font-size:18px;margin-top:15px;color:#4CC9F0;"></p>
+</header>
 
 
-    <!-- BENEFITS SECTION -->
     <section class="ti-features">
         <div class="ti-card">
             <h3>High Coverage, Low Premium</h3>
@@ -94,8 +93,6 @@
         </div>
     </section>
 
-
-    <!-- COMPARISON SECTION -->
     <section class="ti-compare">
         <h2>Choose the Right Term Plan</h2>
 
@@ -134,7 +131,6 @@
     </section>
 
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
@@ -161,7 +157,7 @@
             <p>© 2025 Moneytrix. All Rights Reserved.</p>
         </div>
     </footer>
-
+    <script src="insurance.js"></script>
 </body>
 </html>
 
